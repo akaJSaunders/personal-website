@@ -26,32 +26,68 @@
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
+  <script src="https://kit.fontawesome.com/d978a55889.js" crossorigin="anonymous"></script>
+
 
 </head>
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <body>
 
+  <!-- Introduction Card -->
+  <section class="section is-medium">
+    <%- include('../partials/introductoryCard.ejs') %>
+  </section>
 
-  <section class="hero is-info">
-    <div class="hero-body">
-      <p class="title">
-        Juliano Saunders
-      </p>
-      <p class="subtitle">
-        My personal website!
-      </p>
+  <!-- Honey Guide Section -->
+  <section class="section is-small">
+    <div class="columns is-mobile is-centered">
+      <div class="column is-one-fifth">
+        👇 Keep Scrolling 👇
+      </div>
     </div>
   </section>
 
-  <section class="section">
-    <article class="message is-info is-medium">
-      <div class="message-body">
-        Oh my, we have a visitor! Nice to meet you, I am <strong>Juliano</strong>. I am a <strong>backend engineer</strong>, currently working in London.
-        yes, I know what you must be thinking, "wait a sec...a backend engineer trying to build a website?!", just give me some time and ill have all the colours and buttons sorted for you ;)
+  <section class="section is-medium has-background-grey-lighter">
+    <div class="columns is-mobile is-centered">
+      <div class="column is-one-fifth">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="card-content">
+            <div class="media">
+              <div class="media-left">
+                <figure class="image is-48x48">
+                  <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="media-content">
+                <p class="title is-4">Pinned Medium Article</p>
+                <p class="subtitle is-6">How to remove shorts from instagram</p>
+              </div>
+            </div>
+        
+            <div class="content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+              <a href="#">#css</a> <a href="#">#responsive</a>
+              <br>
+              <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+            </div>
+          </div>
+        </div>
       </div>
-    </article>
+    </div>
   </section>
+
+
+  <footer class="footer">
+    <%- include('../partials/footer.ejs') %>
+  </footer>
+  
 </body>
 
 <!-- End Document
