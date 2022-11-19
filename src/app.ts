@@ -6,6 +6,7 @@ dotenv.config();
 const port = process.env.PORT;
 const app: Express = express();
 
+app.use(express.static('public'))
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
@@ -13,11 +14,6 @@ app.set('view engine', 'ejs');
 // index page
 app.get('/', function(req, res) {
   res.render('pages/index.ejs');
-});
-
-// index page
-app.get('/about', function(req, res) {
-  res.render('pages/about.ejs');
 });
 
 app.listen(port, () => {
