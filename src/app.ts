@@ -11,11 +11,13 @@ app.use(express.static('public'))
 // set the view engine to ejs
 app.set('view engine', 'ejs');
 
+app.listen(port, () => {
+  console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
+});
+
 // index page
 app.get('/', function(req, res) {
   res.render('pages/index.ejs');
 });
 
-app.listen(port, () => {
-  console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
-});
+process.on('SIGINT', () => { console.log("Bye bye!"); process.exit(); });
