@@ -40,8 +40,103 @@
 
     <!-- <%- include('../partials/header.ejs') %> -->
 
-    <section class="section is-medium">
+    <section class="section is-large">
       <%- include('../partials/introductoryCard.ejs') %>
+    </section>
+
+    <section class="section">
+      <div class="columns is-mobile">
+        <div class="column is-half is-offset-one-quarter">
+          <article class="message is-info">
+            <div class="message-body">
+              Thanks for scrolling down! I guess that means you are interested in learning more about me, I appreciate that.
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="section">
+      <div class="columns is-mobile">
+        <div class="column is-half">
+          <div class="box">
+            Hello
+          </div>
+        </div>
+        <div class="column is-half">
+          <div class="tile is-ancestor is-half is-offset-one-quarter">
+            <div class="tile is-parent is-vertical">
+              <article class="tile is-child notification">
+                <p class="subtitle">
+                  <i class="fa-regular fa-gem"></i>
+                  Ruby on Rails
+                </p>
+                <div class="content">
+                  I have been working as a Ruby on Rails backend engineer since Aug 2021, when I joined Thriva Health. This was my first time with Ruby on Rails, however I have come to really like it. Its easy and quick to setup a whole API. The focus on conventions over configurations make this a really nice language to work with.
+                </div>
+                <progress class="progress is-normal is-danger" value="75" max="100">70%</progress>
+              </article>
+              <article class="tile is-child notification">
+                <p class="subtitle">
+                  <i class="fa-brands fa-java"></i>
+                  Java
+                </p>
+                <div class="content">
+                  I have helped develop and maintain Java microservices durring my time consulting with the british .GOV services on behalf of Kainos. I worked with Java for the backend of the digitalization of Companies House services, aswell as durring my time at DEFRA, we built a complex post-brexit imports system.
+                </div>
+                <progress class="progress is-normal is-warning" value="70" max="100">60%</progress>
+              </article>
+              <article class="tile is-child notification">
+                <p class="subtitle">
+                  <i class="fa-brands fa-js"></i>
+                  Typescript/Javascript
+                </p>
+                <div class="content">
+                  I have worked with Javacript and Typescript across my entire professional career. More so durring my time working for Companies House, where we built two different web applications for digitailization existing services. Hopwever more recently, its been put to the side as I explore the backend a bit more. I still enjoying venturing into the frontend for investigations, fixing bugs, and smaller features.
+                </div>
+                <progress class="progress is-normal is-info" value="50" max="100">60%</progress>
+              </article>
+              <article class="tile is-child notification">
+                <p class="subtitle">
+                  <i class="fa-regular fa-star"></i>
+                  Some other languages and tools
+                </p>
+                <div class="content">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>MySQL</td>
+                        <td>Posgresql</td>
+                      </tr>
+                      <tr>
+                        <td>MongoDB</td>
+                        <td>Redis</td>
+                      </tr>
+                      <tr>
+                        <td>AWS</td>
+                        <td>Heroku</td>
+                      </tr>
+                      <tr>
+                        <td>Git</td>
+                        <td>SideKiq</td>
+                      </tr>
+                      <tr>
+                        <td>RabbitMQ</td>
+                        <td>Node.js</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <%- include('../partials/articles.ejs') %>
     </section>
 
     <%- include('../partials/footer.ejs') %>
