@@ -15,6 +15,11 @@ app.listen(port, () => {
   console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
 });
 
+// health endpoint
+app.get('/health', (req: Request, res: Response) => {
+  res.status(200).send('Ok');
+});
+
 // index page
 app.get('/', function(req, res) {
   res.render('pages/index.ejs');
