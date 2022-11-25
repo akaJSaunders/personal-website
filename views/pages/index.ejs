@@ -31,6 +31,62 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="https://kit.fontawesome.com/d978a55889.js" crossorigin="anonymous"></script>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      
+    // Functions to open and close a modal
+    function openModal($el) {
+      $el.classList.add('is-active');
+    }
+
+    function closeModal($el) {
+      $el.classList.remove('is-active');
+    }
+
+    function closeAllModals() {
+      (document.querySelectorAll('.modal') || []).forEach(($modal) => {
+        closeModal($modal);
+      });
+    }
+
+    // Add a click event on buttons to open a specific modal
+    (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
+      const modal = $trigger.dataset.target;
+      const $target = document.getElementById(modal);
+
+      $trigger.addEventListener('click', () => {
+        openModal($target);
+      });
+    });
+
+    (document.querySelectorAll('.notification .delete') || []).forEach(($close) => {
+      const $target = $close.closest('.modal');
+
+      $close.addEventListener('click', () => {
+        closeModal($target);
+      });
+    });
+
+    // Add a click event on various child elements to close the parent modal
+    (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .notification .delete, .modal-card-foot .button') || []).forEach(($close) => {
+      const $target = $close.closest('.modal');
+
+      $close.addEventListener('click', () => {
+        closeModal($target);
+      });
+    });
+
+    // Add a keyboard event to close all modals
+    document.addEventListener('keydown', (event) => {
+      const e = event || window.event;
+
+      if (e.keyCode === 27) { // Escape key
+        closeAllModals();
+      }
+    });
+  });
+  </script>
+
 
 </head>
   <!-- Primary Page Layout
@@ -38,41 +94,24 @@
 <body>
   <div class='container hero is-fullheight'>
 
-    <!-- <%- include('../partials/header.ejs') %> -->
+    <%- include('../partials/header.ejs') %>
 
-    <section class="section is-large">
+    <section class="section is-medium">
       <%- include('../partials/introductoryCard.ejs') %>
     </section>
 
     <section class="section">
       <div class="columns is-mobile">
-        <div class="column is-half is-offset-one-quarter">
-          <article class="message is-info">
-            <div class="message-body">
-              <i class="fa-solid fa-bell" style="color:gold"></i>
-              Psssst... Scroll down for more! 👇
-            </div>
-          </article>
+        <div class="column is-offset-half">
+          <i class="fa-solid fa-2x fa-hand-point-down"></i>
+          <i class="fa-solid fa-2x fa-hand-point-down"></i>
         </div>
       </div>
     </section>
 
     
-    <section class="section is-large">
+    <section class="section is-small">
       <%- include('../partials/career.ejs') %>
-    </section>
-
-    <section class="section">
-      <div class="columns is-mobile">
-        <div class="column is-half is-offset-one-quarter">
-          <article class="message is-info">
-            <div class="message-body">
-              <i class="fa-solid fa-bell" style="color:gold"></i>
-              Thought it would end there? Scroll down for even more!! 👇
-            </div>
-          </article>
-        </div>
-      </div>
     </section>
 
     <section class="section">
@@ -81,6 +120,9 @@
 
     <%- include('../partials/footer.ejs') %>
   </div>
+
+
+  <%- include('../partials/modal.ejs') %>
 </body>
 
 <!-- End Document
