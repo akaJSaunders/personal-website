@@ -25,4 +25,16 @@ app.get('/', function(req, res) {
   res.render('pages/index.ejs');
 });
 
+// index page
+app.get('/hobbies', function(req, res) {
+  res.render('pages/hobbies.ejs');
+});
+
+// index page
+app.get('/cv', function(req, res) {
+  res.render('pages/cv.ejs');
+});
+
+
+
 process.on('SIGINT', () => { console.log("Bye bye!"); process.exit(); });
