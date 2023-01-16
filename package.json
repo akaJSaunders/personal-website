@@ -4,6 +4,7 @@
   "description": "A simple typescript website",
   "main": "index.js",
   "scripts": {
+    "tsc": "tsc",
     "build": "tsc",
     "start": "npm install && npm run build && node dist/app.js",
     "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/app.js\"",
