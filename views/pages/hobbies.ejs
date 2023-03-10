@@ -96,15 +96,91 @@
 
     <%- include('../partials/header.ejs') %>
 
-    <section class="section is-medium">
-      <%- include('../partials/articles.ejs') %>
+    <section class="section">
+      <div class="content">
+        <h1>Side projects</h1>
+        <p>Here are some highlights of what i've done on the side. Whilst I do love programming, I do also like doing a number of other things such as cooking, reading and more recently ive even started writing a little bit.</p>
+      </div>
     </section>
+
+    <section class="section">
+      <div class="content">
+        <h1>Writing</h1>
+      </div>
+      <%- include('../partials/projects.ejs') %>
+    </section>
+
+    <section class="section">
+      <div class="content">
+        <h1>Cooking</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="content">
+        <h1>Reading</h1>
+      </div>
+      <!-- <%- include('../partials/articles.ejs') %> -->
+    </section>
+
+    <section class="section">
+      <div class="content">
+        <h1>Coding</h1>
+      </div>
+      <!-- <%- include('../partials/articles.ejs') %> -->
+    </section>
+
 
     <%- include('../partials/footer.ejs') %>
   </div>
-
-  <%- include('../partials/modal.ejs') %>
 </body>
+
+<style>
+  body {
+    background-color: #f1f1f1;
+    font-family: 'Raleway', sans-serif;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  .subtitle {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #4a4a4a;
+  }
+  .footer {
+    background-color: #4a4a4a;
+    color: #f1f1f1;
+    padding: 1rem;
+  }
+  .footer a {
+    color: #f1f1f1;
+  }
+
+   /* Media queries */
+   @media only screen and (max-width: 768px) {
+    /* Adjust styles for devices with a maximum width of 768px */
+    .hero {
+      padding: 1rem;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    /* Adjust styles for devices with a maximum width of 480px */
+    .hero {
+      padding: 0.5rem;
+    }
+    .subtitle {
+      margin-top: 0.5rem;
+      font-size: 1.25rem;
+    }
+    .footer {
+      padding: 0.5rem;
+    }
+  }
+</style>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

@@ -85,7 +85,30 @@
       }
     });
   });
+
+    // Get all "navbar-burger" elements
+    const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  
+    // Check if there are any navbar burgers
+    if (navbarBurgers.length > 0) {
+  
+      // Add a click event listener to each navbar burger
+      navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+  
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+  
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+  
+        });
+      });
+    }
   </script>
+  
 
 
 </head>
@@ -102,9 +125,53 @@
 
     <%- include('../partials/footer.ejs') %>
   </div>
-
-  <%- include('../partials/modal.ejs') %>
 </body>
+<style>
+  body {
+    background-color: #f1f1f1;
+    font-family: 'Raleway', sans-serif;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  .subtitle {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #4a4a4a;
+  }
+  .footer {
+    background-color: #4a4a4a;
+    color: #f1f1f1;
+    padding: 1rem;
+  }
+  .footer a {
+    color: #f1f1f1;
+  }
+
+   /* Media queries */
+   @media only screen and (max-width: 768px) {
+    /* Adjust styles for devices with a maximum width of 768px */
+    .hero {
+      padding: 1rem;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    /* Adjust styles for devices with a maximum width of 480px */
+    .hero {
+      padding: 0.5rem;
+    }
+    .subtitle {
+      margin-top: 0.5rem;
+      font-size: 1.25rem;
+    }
+    .footer {
+      padding: 0.5rem;
+    }
+  }
+</style>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
