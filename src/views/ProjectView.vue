@@ -1,20 +1,24 @@
 <template>
   <div>
-    <h1>What i've worked on!</h1>
     <div class="tiles">
-      <a href="https://www.gov.uk/appeal-a-penalty-for-filing-your-company-accounts-late" target="_blank">
-        <img src="@/assets/profile.jpg" alt="Image 1">
-      </a>
-      <a href="https://thriva.co/" target="_blank">
-        <img src="@/assets/profile.jpg" alt="Image 2">
-      </a>
       <a href="https://github.com/akaJSaunders/astro-roid-rage" target="_blank">
+        <p>Astro Roid Rage (Game)</p>
         <img src="@/assets/profile.jpg" alt="Image 3">
       </a>
       <a href="https://github.com/akaJSaunders/martian-mike" target="_blank">
+        <p>Martian Mike (Game)</p>
         <img src="@/assets/profile.jpg" alt="Image 3">
       </a>
       <a href="https://www.youtube.com/watch?v=biMmRFgScSY" target="_blank">
+        <p>Polymorpous (Game)</p>
+        <img src="@/assets/profile.jpg" alt="Image 3">
+      </a>
+      <a href="https://www.youtube.com/watch?v=biMmRFgScSY" target="_blank">
+        <p> Character-Based Handwriting Recognition w/ Neural Network</p>
+        <img src="@/assets/profile.jpg" alt="Image 3">
+      </a>
+      <a href="https://www.youtube.com/watch?v=biMmRFgScSY" target="_blank">
+        <p> Endpoint Documentation w/ Ruby on Rails and Rswag</p>
         <img src="@/assets/profile.jpg" alt="Image 3">
       </a>
     </div>

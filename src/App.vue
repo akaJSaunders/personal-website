@@ -8,58 +8,19 @@ import Greeting from './components/Greeting.vue'
     <img alt="logo" class="logo" src="@/assets/profile.jpg" width="125" height="125" />
 
     <div class="wrapper">
-      <Greeting msg="Hello World!" />
-
+      <Greeting msg="Hello World! 👋" />
       <nav>
-        <RouterLink to="/">About me</RouterLink>
-        <RouterLink to="/experience">Experience</RouterLink>
-        <RouterLink to="/projects">Projects</RouterLink>
+        <RouterLink to="/">About ❤️</RouterLink>
+        <RouterLink to="/experience">Experience 🚀</RouterLink>
+        <RouterLink to="/projects">Projects 💡</RouterLink>
       </nav>
     </div>
-
-    <div class="company-logos">
-      <img src="@/assets/profile.jpg" alt="Company Logo 1" />
-      <img src="@/assets/profile.jpg" alt="Company Logo 2" />
-      <img src="@/assets/profile.jpg" alt="Company Logo 3" />
-      <!-- Add more logo images here -->
-    </div>
-
   </header>
 
   <RouterView />
 </template>
 
 <style scoped>
-
-.company-logos {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.company-logos img {
-  width: 100px;
-  height: 100px;
-  margin: 0 px;
-  opacity: 0.5;
-  animation: scrollLogos 20s linear infinite;
-}
-
-@keyframes scrollLogos {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
 header {
   line-height: 1.5;
   max-height: 100vh;
@@ -68,6 +29,9 @@ header {
 .logo {
   display: block;
   margin: 0 auto 2rem;
+  border-radius: 50%; /* Add this line to make the logo appear as a circle */
+  width: 125px; /* Adjust the width to make the logo bigger */
+  height: 125px; /* Adjust the height to make the logo bigger */
 }
 
 nav {
