@@ -1,13 +1,18 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-
-    <p>As a Senior Backend Engineer at Thriva, I am passionate about designing and building backend solutions that help users improve their health and engage with our web and mobile applications.</p>
-    <p>I work in the Product Experience team, where I collaborate with other engineers, designers, and product managers to deliver high-quality and user-centric features and products.</p>
-
+  <div>
+    <h1>My name is Juliano! </h1>
+    <h3>
+      I am a backend engineer with a passion for creating and maintaining exciting solutions that make a difference. 
+      For 4 years now, I have been working to serving B2C users. From government services to health and wellness, I trully care about the customers and the impact of the products I work on.
+    </h3>
     <br>
-    <p>Some of the B2C projects that I have contributed to include building Health Plans, a personalized and flexible subscription service that allows users to monitor and manage their health goals; designing and implementing a digital currency, which rewards users for their health actions and can be used to purchase products and services from our shop; and continuously improving our shop infrastructure, which integrates with Stripe and Prismic CMS to provide a seamless and secure checkout experience.</p>
-    <p>I use Ruby on Rails, OpenAPI Specification, and other technologies to create scalable, reliable, and maintainable backend systems.</p>
+    <h3>
+      
+    </h3>
+    <br>
+    <h3>
+     
+    </h3>
   </div>
 </template>
 
