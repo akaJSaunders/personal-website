@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import Greeting from './components/Greeting.vue'
+import GreetingCard from './components/GreetingCard.vue'
 </script>
 
 <template>
@@ -8,7 +8,7 @@ import Greeting from './components/Greeting.vue'
     <img alt="logo" class="logo" src="@/assets/profile.jpg" width="125" height="125" />
 
     <div class="wrapper">
-      <Greeting msg="Hello World! 👋" />
+      <GreetingCard msg="Hello World! 👋" />
       <nav>
         <RouterLink to="/">About ❤️</RouterLink>
         <RouterLink to="/experience">Experience 🚀</RouterLink>

@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import TheWelcome from '../components/ConnectedList.vue'
+import ExperienceList from '../components/ExperienceList.vue'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <ExperienceList />
   </main>
 </template>

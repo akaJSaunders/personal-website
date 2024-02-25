@@ -1,21 +1,21 @@
 <script setup lang="ts">
-import ConnectedListItem from './ConnectedListItem.vue'
+import ExperienceItem from './ExperienceItem.vue'
 import DocumentationIcon from './icons/IconDocumentation.vue'
 import ToolingIcon from './icons/IconTooling.vue'
 import SupportIcon from './icons/IconSupport.vue'
 </script>
 
 <template>
-  <ConnectedListItem>
+  <ExperienceItem>
     <template #icon>
       <DocumentationIcon />
     </template>
     <template #heading>BSc. Computer Science, University Of Birmingham</template>
     Dissertation: "Offline Character-Based Handwriting Recognition with Deep 2D Convolutional Neural Network"
     <a href="https://mega.nz/folder/cBlkDIjS#ygPP9QaUM7iDwZl5JQrtEw" target="_blank" rel="noopener">Link to dissertation abstract</a>
-  </ConnectedListItem>
+  </ExperienceItem>
 
-  <ConnectedListItem>
+  <ExperienceItem>
     <template #icon>
       <ToolingIcon />
     </template>
@@ -26,9 +26,9 @@ import SupportIcon from './icons/IconSupport.vue'
 
     <em><u>Associate Software Engineer</u></em>
     <p>Full-stack engineer developing the post-brexit imports system for DEFRA (Department for Environment, Food and Rural Affairs).</p>
-  </ConnectedListItem>
+  </ExperienceItem>
 
-  <ConnectedListItem>
+  <ExperienceItem>
     <template #icon>
       <ToolingIcon />
     </template>
@@ -39,12 +39,12 @@ import SupportIcon from './icons/IconSupport.vue'
 
     <em><u>Senior Backend Engineer</u></em>
     <p>Senior Backend Engineer of the Product Experience team. Designing and building backend solutions that better support users to improve their health and allow users to engage on a frequent basis through our web page and mobile app. From Health Plans, to integrating our own digital currency with the shop infrastructure, been involved in all things B2C</p>
-  </ConnectedListItem>
+  </ExperienceItem>
 
-  <ConnectedListItem>
+  <ExperienceItem>
     <template #icon>
       <SupportIcon />
     </template>
     <template #heading>Present</template>
-  </ConnectedListItem>
+  </ExperienceItem>
 </template>
